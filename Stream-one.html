@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/CSS/style.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>  
 </head>
-<body class="px-16 py-6 bg-gray-100">
+<body class="px-16 py-6 bg-#7fc8a9-100">
   <!-- START NAV -->
 
-<nav id="navbar" class="nav">
+<nav id="navbar" class="nav md:col-span1 md:flex md:justify-end text-right">
   <ul class="nav-list">
     <li>
-      <a href="#welcome-section">About</a>
+      <a href="#welcome-section">About</a><i class="fa-solid fa-house-user"></i>
     </li>
     <li>
-      <a href="#projects">Work</a>
+      <a href="#projects">Work</a><i class="fa-solid fa-briefcase-blank"></i>
     </li>
     <li>
-      <a href="#contact">Contact</a>
+      <a href="#contact">Contact</a><i class="fa-solid fa-address-book"></i>
     </li>
   </ul>
 </nav>
@@ -29,9 +30,9 @@
   
   
 <section id="welcome-section" class="welcome-section" class="flex justify-center">
-  <h1 class="text-3xl font-bold underline" class="text-green-500 sm:text-red-500">Hey I am Malcolm</h1>
+  <h1 class="text-3xl font-bold underline" class="text-green-500 sm:text-red-500" class="flex justify-center">Hey I am Malcolm</h1>
   <p class="text-gray-900" class="text-4x1" class="flex justify-around">A FullStack Developer</p>
-  <img src="/images/stratzlinkedin.jpg" alt="linkedin" class="aspect-w-3 aspect-h-1">
+  <div id="Stratz"></div>
 </section>
 
 <!-- END WELCOME SECTION -->
@@ -94,5 +95,6 @@
             <span class="code">&#47;&gt;</span>
           </p>
         </a>
+        <!-- font awesome script -->
 </body>
 </html>

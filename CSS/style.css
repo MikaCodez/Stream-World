@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+body {
+    background-color: #7fc8a9	;
+    font-family:'Fredoka', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 50px;
+    margin-top: 80px;
+}
+
+h2,
+h4,
+h5,
+p {
+    text-align: center;
+}
+
+/* about page */
+
+#Stratz {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/stratzlinkedin.jpg");
+  height: 70vh;
+  background-position:initial;
+  background-size: contain;
+  overflow: hidden;
+    
+  }
