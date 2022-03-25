@@ -177,12 +177,7 @@ html {
   .projects-section {
     padding: 6rem 1rem;
   }
-
-  .projects-grid {
-    grid-template-columns: 6fr;
-  }
-}
-
+   
 .project {
   background: var(--main-gray);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -198,16 +193,6 @@ html {
   color: #ff7f50;
 }
 
-.project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-}
-
-.project-title {
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
-}
 
 .btn {
   display: inline-block;
