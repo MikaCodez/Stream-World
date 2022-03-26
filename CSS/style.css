@@ -7,6 +7,7 @@ body {
     font-family:'Fredoka', sans-serif;
     font-size: 20px;
     line-height: 30px;
+    background-color: #dff5de;
 }
 
 h1 {
@@ -99,7 +100,7 @@ html {
     position: absolute;
     padding-left: 3rem;
     padding-right: 3rem;
-    top: 38rem;
+    top: 42rem;
     right: 50rem;
     background: #115de0;
     overflow: hidden;
@@ -219,6 +220,13 @@ html {
   transform: translateX(0);
   transition: transform 0.3s ease-out;
 }
+
+/* About Me Section */
+
+.about-me {
+  padding-top: 20px;
+}
+  
 
 /* Contact section */
 
