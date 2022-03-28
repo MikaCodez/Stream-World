@@ -227,6 +227,11 @@ html {
   padding-top: 20px;
 }
 
+.projcase {
+  font-size: 30px;
+  text-align: center;
+}
+
 /* Contact section */
 
 .contact-section {
