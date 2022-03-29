@@ -297,3 +297,46 @@ footer > p {
 footer i {
   vertical-align: middle;
 }
+
+/* Media Queries */
+@media (min-width: 1024px)
+.lg\:flex {
+    display: flex;
+}
+@media (min-width: 1024px)
+.lg\:m-6 {
+    margin: 1.5rem;
+}
+@media (min-width: 768px)
+.md\:items-start {
+    align-items: flex-start;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 320px) and (max-width: 767px) { 
+  
+  #logo {
+    right: 80px;
+  }
+
+  #welcome-section {
+font-size: 0.5rem;
+height: 25%;
+  }
+
+  .name , .title {
+    font-size: 4.3rem;
+    height: 25%;
+    left: 41px;
+}
+
+ #contact{
+  font-size: 1.5rem;
+  height: 35%;
+  width: fit-content;
+}
+  
+.fancy-button {
+  left: 100px;
+  down: 80px;
+}
