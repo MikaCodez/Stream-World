@@ -1,1 +1,1 @@
-Deployed Site here: [MalczCodezOnline](https://www.malczcodez.online/)
+Deployed Site here: [MalczCodezOnline](https://malczcodez.online/)
