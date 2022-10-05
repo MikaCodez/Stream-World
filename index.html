@@ -1,205 +1,328 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Meta Tags -->
+  <meta name="title" content="Your title">
+  <meta name="description" content="Your description">
+  <meta name="author" content="Your name">
+
+  <!-- OG (Open Graph) meta tags to control how URLs are displayed when shared on social media. -->
+  <meta property="og:site_name" content="" /> <!-- website name -->
+  <meta property="og:site" content="" /> <!-- website link -->
+  <meta property="og:type" content="website" /> <!-- Type of object you’re sharing. (e.g., article, website, etc.) -->
+  <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+  <meta property="og:description" content="" /> <!-- A brief description of the content. -->
+  <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+  <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- social meta tag that are exclusively used for Twitter -->
+
+  <!-- Webpage Title -->
+  <title>Portfolio - MalczCodez | Full-Stack Developer | UX/UI Design</title>
+
+
+  <!-- Styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet"><!-- Bootstrap Styles -->
+  <link rel="stylesheet" href="./css/main.css"> <!-- Custom styles -->
   <script src="https://kit.fontawesome.com/e5fe93e7e2.js" crossorigin="anonymous"></script>
-  <!-- Favicon  -->
-  <link rel="icon" href="assets/css/images/faviconM.PNG">
+
 </head>
-<body class="px-16 py-6" >
-  <!-- START NAV -->
-<div class="flex justify-initial"><img id="logo" class="pt-15" src="assets/css/images/malczcodez.online.WebP" alt="logo"/></div>
-<nav id="navbar" class="nav md:col-span1 md:flex md:justify-end text-right">
-  <div class="px-4 cursor-pointer md:hidden" id="burger">
-    <i class="fa-solid fa-bars"></i>
-  </div>
-    <ul class="nav-list" class="text-sm mt-6 hidden md:block" id="menu">
-    <li>
-      <a href="#welcome-section" class="px-4 flex justify-end">About<i class="fa-solid fa-house-user inline-block"></i></a>
-    <li>
-      <a href="#projects" class="px-4 flex justify-end">Work<i class="fa-solid fa-laptop-file"></i></a>
-    </li>
-    <li>
-      <a href="#contact" class="px-4 flex justify-end">Contact<i class="fa-solid fa-address-book"></i></a>
-    </li>
-    <li>
-      <a href="#contact" class="px-4 flex justify-end">Blog<i class="fa-solid fa-blog"></i></a>
-    </li>
-  </ul>
-</nav>
 
-<!-- END NAV -->
+<body>
 
-  <!-- START WELCOME SECTION -->
-  
-  
-<section id="welcome-section" class="welcome-section" class="flex justify-center">
-  <div class="text-center sm:shrink-0>
-  <div class="text-3xl font-bold" class="text-green-500 sm:text-red-500" class="flex justify-end">
-  <h1 class="name" class="pt-6">Hey I am Malcolm</h1>
-</div>
-  <div class="text-gray-900" class="text-4x1" class="flex justify-around">
-  <h2 class="title">A FullStack Developer</h2>
-</div>
-  <div id="Stratz" class="shrink-0"></div>
+  <!-- ======= Navigation ======= -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="app-navbar">
+    <div class="container">
+      <!-- <a href="/" class="navbar-brand logo">Ronny.</a> 
+      Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo_img"><img src="img/malczcodez.online.jpg" alt=""></a>
 
-  </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mt-2 mt-xl-0">
+          <li class="nav-item">
+            <a class="nav-link py-1 px-0 px-lg-3 active" href="#Service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Portfolio" class="nav-link py-1 px-0 px-lg-3">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://dev.to/mikacodez" target="_blank" class="nav-link py-1 px-0 px-lg-3">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Contact" class="nav-link py-1 px-0 px-lg-3">Contact</a>
+          </li>
+        </ul>
+        <div class="social-icons d-flex justify-content-xl-end mt-3 mt-xl-0">
+          <a class="nav-link py-1 px-0" href="https://github.com/MikaCodez"
+          target="_blank"><img src="./img/icons/github (1).png" alt=""></a>
+          <a class="nav-link py-1 px-4" href="https://twitter.com/CodezMikazuki"
+          target="_blank"><img src="./img/icons/twitter.svg" alt=""></a>
+          <a class="nav-link py-1 px-0" href="https://www.linkedin.com/in/malcolm-wiredu-9329a197/" target="_blank"><img src="./img/icons/linkedin (2).png" alt=""></a>
+        </div>
+      </div> <!-- .navbar-collapse end -->
+    </div> <!-- .container end -->
+  </nav> <!-- nav end -->
 
-  <a href="#projects">
-  <button
-  type="submit"
-  class="fancy-button text-center">
-  <span class="fancy-button-text">
-    PORTFOLIO</span></a>
+  <!-- ======= Header ======= -->
+  <header class="header">
+    <div class="header-container">
+      <div class="header-content">
+        <h1 class="heading-primary">Hey,
+          I’m Malcolm</h1>
+        <h3 class="header-text">Full Stack Developer | Freelancer | UI UX Designer </h3>
+        <p class="text-paragraph-18">I'm a digital product designer focusing on crafting user experiences and design
+          systems for software, web, and mobile products.</p>
+        <a href="" type="button" class="btn btn-primary">Hire me</a>
+      </div> <!-- .header-content end -->
+      <div class="header-img">
+        <img src="./img/stratzlinkedinP-removebg-preview.png" alt="">
+      </div> <!-- .header-img end -->
+    </div> <!-- .header-container end -->
+  </header> <!-- .header end -->
 
-  <span class="fancy-button-background">&nbsp;</span>
-  <i class="fas fa-paper-plane"></i>
-</button>
-</section>
 
-<!-- END WELCOME SECTION -->
+  <!-- ======= Service ======= -->
+  <section id="Service" class="service">
+    <div class="sub-heading">
+      <h2 class="heading-secondary">Services that connect <br> you to your users</h2>
+    </div> <!-- .sub-heading end -->
+    <div class="service-container">
+      <div class="service-card">
+        <img src="./img/icons/mobile-notch-free-icon-font.png" alt="">
+        <h3 class="heading-tertiary">Mobile Application</h3>
+        <p class="text-paragraph-16">I can work with you to create a fully functional Mobile Application and hace ready for the IOS/Android production.</p>
+      </div> <!-- .service-card end -->
+      <div class="service-card">
+        <img src="./img/icons/browser-free-icon-font.png" alt="">
+        <h3 class="heading-tertiary">Web Application</h3>
+        <p class="text-paragraph-16">Creating Fully responsive websites is my bread and butter. Expect nothing but high quality.</p>
+      </div> <!-- .service-card end -->
+      <div class="service-card">
+        <img src="./img/icons/apps-add-free-icon-font.png" alt="">
+        <h3 class="heading-tertiary">User Interface Design</h3>
+        <p class="text-paragraph-16">Specialising in both UX and UI design we can map out how your applications can be expected to perform and look.</p>
+      </div> <!-- .service-card end -->
+      <div class="service-card">
+        <img src="./img/icons/boxes-free-icon-font.png" alt="">
+        <h3 class="heading-tertiary">Project Management</h3>
+        <p class="text-paragraph-16">I work with each of my clients through out the project process to manage expectations and features of each application to a high standard.</p>
+      </div> <!-- .service-card end -->
+      <div class="service-card">
+        <img src="./img/icons/chess-queen-alt-free-icon-font.png" alt="">
+        <h3 class="heading-tertiary">Strategy and Branding</h3>
+        <p class="text-paragraph-16">Specialising in SEO and Marketing strategies is a way to make your Applications stand out from the rest of the crowd.</p>
+      </div> <!-- .service-card end -->
+      <div class="service-card">
+        <img src="./img/icons/edit-alt-free-icon-font.png" alt="">
+        <h3 class="heading-tertiary">Product Designing</h3>
+        <p class="text-paragraph-16">From inception to close I can complete ideas of your products with the help of my design team that I colloborate with on projects</p>
+      </div> <!-- .service-card end -->
+    </div> <!-- .service-container end -->
+  </section> <!-- .service end -->
 
-<!-- START PROJECTS SECTION -->
-
-  <h2 class="projcase">These are some of my projects</h2>
-   <div class="mt-8 grid grid-cols-3 gap-10"> 
-   <!-- cards go here -->
-    <div class="bg-white rounded overflow-hidden shadow-md group-hover:text-white">
-     
-      <img src="assets/css/images/responsive page.JPG" alt="mtea" class="w-full h-32 sm:h-48 object-cover" >
-      <div class="m-4">
-        <span class="font-bold"><a href="https://divinetiming.herokuapp.com/" target="_blank">Divine Timing:</a></span>
-        <span class="block text-gray-500 text-sm">E-commerce Store</span>
+  <!-- ======= Portfolio ======= -->
+  <section id="Portfolio" class="portfolio">
+    <div class="sub-heading">
+      <h2 class="heading-secondary">Some of my recent work</h2>
+    </div> <!-- .sub-heading end -->
+    <div class="portfolio-container">
+      <div class="portfolio-card">
+        <a href="https://divinetiming.herokuapp.com/" target="_blank">
+        <img src="./img/responsive page.JPG" alt="">
+        <div class="portfolio-card-content">
+          <h3 class="heading-tertiary">Divine Timing:</h3>
+          <p class="text-paragraph-16">E-commerce Store</p>
+        </a>
       </div>
-    </div>
-  
+      </div> <!-- .portfolio-card end -->
+      <div class="portfolio-card">
+        <a href="https://ghit-reservation.herokuapp.com/" target="_blank">
+        <img src="./img/GHIT responsive.JPG" alt="">
+        <div class="portfolio-card-content">
+          <h3 class="heading-tertiary">GHIT Restauarant</h3>
+          <p class="text-paragraph-16">Fully Responsive Restauarant Page</p>
+        </a>
+      </div>
+      </div> <!-- .portfolio-card end -->
+      <div class="portfolio-card">
+        <a href="https://hackathon-mindfulness.herokuapp.com/" target="_blank">
+        <img src="./img/mindscape collection.JPG" alt="">
+        <div class="portfolio-card-content">
+          <h3 class="heading-tertiary">Mindscape:</h3>
+          <p class="text-paragraph-16">Mental Health Page</p>
+        </a>
+      </div>
+      </div> <!-- .portfolio-card end -->
+      <div class="portfolio-card">
+        <a href="https://mikacodez.github.io/mellowte/" target="_blank">
+        <img src="./img/melloresponsive.jpg" alt="">
+        <div class="portfolio-card-content">
+          <h3 class="heading-tertiary">Mellow Te:</h3>
+          <p class="text-paragraph-16">Herbal tea informational page</p>
+        </a>
+      </div>
+      </div> <!-- .portfolio-card end -->
+    </div> <!-- .portfolio-container end -->
+  </section> <!-- .portfolio end -->
 
-  <div class="bg-white rounded overflow-hidden shadow-md">
-    
-    <img src="assets/css/images/ghit homepage 1.JPG" alt="mtea" class="w-full h-32 sm:h-48 object-cover">
-    <div class="m-4">
-      <span class="font-bold"><a href="https://ghit-reservation.herokuapp.com/" target="_blank">GHIT Restauarant</a></span>
-      <span class="block text-gray-500 text-sm">Fully Responsive Restauarant Page</span>
-    </div>
-  </div>
+  <!-- ======= Testimonial ======= -->
+  <section id="Testimonial" class="testimonial">
+    <div class="sub-heading">
+      <h2 class="heading-secondary">Our Clients Speak</h2>
+      <p class="text-paragraph-16">We have been working with clients around the world</p>
+    </div> <!-- .sub-heading end -->
+    <div class="testimonial-container">
+      <div class="testimonial-card">
+        <div class="testimonial-card-box">
+          <h3 class="header-text">Quote Testimonials</h3>
+          <p class="text-paragraph-16 mt-2">I have already had my Portfolio re-designed by Malcolm. Being a designer myself I am very impressed with his work and will work with him again.
+          </p>
+        </div> <!-- .testimonia-card-box end -->
+        <div class="testimonial-card-info">
+          <img src="/img/a7b815100183447.606f0d6f6e12c.jpg" alt="">
+          <h6 class="text-paragraph-16 mt-1">Clelia Giannuoli</h6>
+          <p class="text-paragraph-14 mt-1">Freelance Designer</p>
+        </div> <!-- .testimonia-card-info end -->
+      </div> <!-- .testimonia-card end -->
+      <div class="testimonial-card">
+        <div class="testimonial-card-box">
+          <h3 class="header-text">Quote Testimonials</h3>
+          <p class="text-paragraph-16 mt-2">I have worked with Malcolm on many projects in the last year or so, Excellent service!
+          </p>
+        </div> <!-- .testimonia-card-box end -->
+        <div class="testimonial-card-info">
+          <img src="/img/testimonial-2.jpg" alt="">
+          <h6 class="text-paragraph-16 mt-1">Jamie Palmer</h6>
+          <p class="text-paragraph-14 mt-1">Small Business owner</p>
+        </div> <!-- .testimonia-card-info end -->
+      </div> <!-- .testimonia-card end -->
+      <div class="testimonial-card">
+        <div class="testimonial-card-box">
+          <h3 class="header-text">Quote Testimonials</h3>
+          <p class="text-paragraph-16 mt-2">Malcolm is a pleasure to work with. What I like especially is that my site now has a lot more clicks due to his SEO speciality implementations.
+          </p>
+        </div> <!-- .testimonia-card-card end -->
+        <div class="testimonial-card-info">
+          <img src="/img/testimonial-5.jpg" alt="">
+          <h6 class="text-paragraph-16 mt-1">Stacie Richards</h6>
+          <p class="text-paragraph-14 mt-1">Marketing Specialist</p>
+        </div> <!-- .testimonia-card-info end -->
+      </div> <!-- .testimonia-card end -->
+    </div> <!-- .testimonial-container end -->
+  </section> <!-- .testimonial end -->
 
-
-<div class="bg-white rounded overflow-hidden shadow-md">
-  
-  <img src="assets/css/images/mindscape collection.WebP" alt="mtea" class="w-full h-32 sm:h-48 object-cover">
-  <div class="m-4">
-    <span class="font-bold"><a href="https://hackathon-mindfulness.herokuapp.com/" target="_blank">Mindscape:</a></span>
-    <span class="block text-gray-500 text-sm">Mental Health Page</span>
-  </div>
-</div>
-
-
-<div class="bg-white rounded overflow-hidden shadow-md">
-  <img src="assets/css/images/melloresponsive.WebP" alt="mtea" class="w-full h-32 sm:h-48 object-contain">
-  <div class="m-4">
-    <span class="font-bold"><a href="https://mikacodez.github.io/mellowte/" target="_blank">Mellow Te:</a></span>
-    <span class="block text-gray-500 text-sm">Herbal tea informational page</span>
-  </div>
-</div>
-
-
-<div class="bg-white rounded overflow-hidden shadow-md">
-  <img src="assets/css/images/clelz.WebP" alt="mtea" class="w-full h-32 sm:h-48 object-cover">
-  <div class="m-4">
-    <span class="font-bold"><a href="https://codepen.io/malczzero/full/LYWyzbW" target="_blank">Clelia</a></span>
-    <span class="block text-gray-500 text-sm">Graphic Designer Portfolio</span>
-  </div>
-</div>
-
-
-<div class="bg-white rounded overflow-hidden shadow-md">
-    <img src="assets/css/images/spook.WebP" alt="mtea" class="w-full h-32 sm:h-48 object-cover">
-  <div class="m-4">
-    <span class="font-bold"><a href="https://adowlin.github.io/spookathon-team7/" target="_blank">Spookathon</a></span>
-    <span class="block text-gray-500 text-sm">Interactive Halloween Website</span>
-  </div>
-</div>
-
-</div> 
-</section>
-<br>
-<br>
-<div class="text-center">
-  <a href="https://drive.google.com/file/d/18__0gxTOkYXZ9p3PuAnvO6f9BED7lVIh/view?usp=sharing"
-  target="_blank">
-    <button class="bg-blue-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full">
-      VIEW CV<i class="fa-solid fa-paper-plane"></i>
-    </button>
-  </div>
-<br>
-<br>
-<!-- ABOUT ME SECTION -->
-<div class="about-me">
-<div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
-  <div class="md:flex">
-    <div class="md:shrink-0">
-      <img class="h-48 w-full object-cover md:h-full md:w-48" src="assets/css/images/stratzlinkedinP.WebP" alt="stratz">
-    </div>
-    <div class="p-8">
-      <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold text-center">About Me</div>
-        <p class="mt-2 text-slate-500">I am a Londoner currently based South Italy. I have been Studying Web Development since 2019 and now a Full-Stack Developer.
+  <!-- ======= About ======= -->
+  <section id="About" class="about">
+    <div class="about-container">
+      <img src="./img/IMG_0369-removebg-preview.png" alt="">
+      <div class="about-content">
+        <h2 class="heading-secondary">About me</h2>
+        <p class="text-paragraph-16">I am a Londoner currently based South Italy. I have been Studying Web Development since 2019 and now a Full-Stack Developer.
           At the moment I currently specialise in Languages such as HTML, CSS, Javascript, Python, PHP, MySQL, Java, Kotlin etc. I'm also trained in UX/UI Design.
-          I believe with the services I Provide I can help solve your business needs by converting visitors to your newly developed website into qualified leads.
+          
+        </p>
+        <p class="text-paragraph-16">I believe with the services I Provide I can help solve your business needs by converting visitors to your newly developed website into qualified leads.
           I aim to double the number of free consultations to your website with my expertise. I am also proficient in technical writing and the entire UX design process
-          So please get in contact so we can discuss how we can rebrand your business.
-  </p>
-    </div>
-  </div>
-</div>
-</div>
-        <!-- START FOOTER AND CONTACT SECTION -->
-<br>
-<br>
-<div class="text-center">
-<a href="https://dev.to/mikacodez"
-target="_blank">
-  <button class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-    BLOG<i class="fa-solid fa-paper-plane"></i>
-  </button>
-</div>
-<br>
-<br>
-<footer>
-  
-<section id="contact" class="contact-section">
-  <div class="contact-section-header">
-    <h2 class="work flex-auto text-xlg font-bold text-slate-900">Let's work together...</h2>
-  </div>
-  <div class="contact-links text-center">
-    <a
-      id="profile-link"
-      href="https://github.com/MikaCodez"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-github"></i> GitHub</a
-    >
-    <a
-      href="https://twitter.com/CodezMikazuki"
-      target="_blank"
-      class="btn contact-details"
-      ><i class="fab fa-twitter"></i> Twitter</a
-    >
-    <a href="mailto:malcolm.wiredu@gmail.com" class="btn contact-details"
-      ><i class="fas fa-at"></i> Send a mail</a
-    >
-    <a href="tel:079-3022-3512" class="btn contact-details"
+          So please get in contact so we can discuss how we can rebrand your business.</p>
+        <p class="text-paragraph-16">Contact me for freelance/contract work, consulting, or if you want to chat! I'd be
+          happy to hear from you.</p>
+      </div> <!-- .about-content end -->
+    </div> <!-- .about-container end -->
+  </section> <!-- .about end -->
+
+  <!-- ======= Contact ======= -->
+  <section id="Contact" class="contact">
+    <div class="sub-heading">
+      <h2 class="heading-secondary">Contact me</h2>
+      <p class="text-paragraph-16">Contact me for freelance/contract work, consulting, or if you want to chat! I'd be
+        happy to hear from you.</p>
+    </div> <!-- .sub-heading end -->
+    <div class="contact-container">
+      <form action="" class="form">
+        <div class="contact-row row">
+          <div class="contact-input col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+          </div> <!-- .contact-input end -->
+          <div class="contact-input col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" id="email" class="form-control" placeholder="test@test.com" required>
+          </div> <!-- .contact-input end -->
+        </div> <!-- .contact-row end -->
+        <div class="contact-row row">
+          <div class="contact-input col-md-6">
+            <label for="number" class="form-label">Phone number</label>
+            <input type="number" id="number" class="form-control" placeholder="000-000-0000" required>
+          </div> <!-- .contact-input end -->
+          <div class="contact-input col-md-6">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" class="form-control" placeholder="type here" required>
+          </div> <!-- .contact-input end -->
+        </div> <!-- .contact-row end -->
+        <div class="contact-row row">
+          <div class="contact-input">
+            <label for="textares" class="form-label">Message</label>
+            <textarea type="text" id="textarea" class="form-control" rows="3" placeholder="type here"></textarea>
+          </div> <!-- .contact-input end -->
+        </div> <!-- .contact-row end -->
+        <div class="contact-row d-flex flex-row-reverse">
+          <a href="mailto:malcolm.wiredu@gmail.com" class="btn btn-primary justify-content-end">Submit</a>
+        </div> <!-- .contact-row end -->
+      </form> <!-- .form end -->
+    </div> <!-- .contact-container end -->
+  </section> <!-- .contact end -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <a href="index.html" class="logo_img"><img src="img/icons/faviconM.PNG" alt=""></a>
+      <ul>
+        <li>
+          <a href="#Service" class="footer-text">Service</a>
+        </li>
+        <li>
+          <a href="#Portfolio" class="footer-text">Portfolio</a>
+        </li>
+        <li>
+          <a href="https://dev.to/mikacodez" target="_blank">Blog</a>
+        </li>
+        <li>
+          <a href="#Testimonial" class="footer-text">Testimonial</a>
+        </li>
+        <li>
+          <a href="#About" class="footer-text">About</a>
+        </li>
+        <li>
+          <a href="#Contact" class="footer-text">Contact</a>
+        </li>
+        <a href="tel:079-3022-3512" class="btn contact-details"
       ><i class="fas fa-mobile-alt"></i> Call me</a
     >
     <a href="https://www.linkedin.com/in/malcolm-wiredu-9329a197/" target="_blank" class="btn contact-details"
     ><i class="fa-brands fa-linkedin"></i> Linked in</a>
-  </div>
-</section> 
-</footer>     
-        <!-- font awesome script -->
-        <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
-        <script src="index.js"></script>
+      </ul> <!-- ul end -->
+      <div class="footer-copyright">
+        <p>Design & Code by Malcolm Wiredu, All right reserved &copy; <span id="year"></span></p>
+      </div> <!-- .footer-copyright end -->
+    </div> <!-- .footer-container end -->
+  </footer> <!-- .footer end -->
+
+  <!-- ======= Back to top ======= -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><img src="./img/icons/arrow-up.svg"
+      alt=""></a>
+
+  <!-- scripts -->
+  <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+  <script src="./js/app.js"></script> <!-- Custom scripts -->
+  <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script><!-- font awesome script -->
 </body>
+
 </html>
