@@ -490,7 +490,8 @@ h1, h2, h3, h4, h5, h6, p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("https://img2.goodfon.com/wallpaper/nbig/7/2e/tekstura-zelenyy-gradient.jpg");
+  background-image: linear-gradient(to top, #23a891, #199f8d, #109588, #078c83, #02837d, #007e7a, #007976, #007473, #017271, #017070, #026e6e, #026c6c);
+  /* background-image: url("https://img2.goodfon.com/wallpaper/nbig/7/2e/tekstura-zelenyy-gradient.jpg"); */
 }
 
 .header-container {
